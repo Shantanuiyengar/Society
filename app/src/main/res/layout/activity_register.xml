@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textStyle="bold"
+        android:text="Username: "
+        android:textSize="30sp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:id="@+id/RegisterEmail"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:hint="Please Enter Username:"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterEmail"
+        android:layout_marginTop="15dp"
+        android:text="Password: "
+        android:textColor="@android:color/tab_indicator_text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:id="@+id/RegisterPassword"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:hint="Please Enter Password:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterPassword"
+        android:id="@+id/RegisterPassword1"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:hint="Please Enter Password again:"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterRegister"
+        android:layout_below="@id/RegisterPassword1"
+        android:text="Register"
+        android:textSize="25sp"
+        android:backgroundTint="#FFC107"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterLogin"
+        android:layout_below="@id/RegisterRegister"
+        android:text="Have an account??"
+        android:textSize="25sp"
+        android:backgroundTint="#FF9800"/>
+</RelativeLayout>

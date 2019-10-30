@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MyData">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv5"
+        android:text="Title: "
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/tv5"
+        android:inputType="textPersonName"
+        android:layout_marginTop="15dp"
+        android:hint="Please enter title"
+        android:id="@+id/CTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv6"
+        android:layout_below="@id/CTitle"
+        android:text="Description: "
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:layout_below="@id/tv6"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:hint="Enter description here"
+        android:id="@+id/CDesc"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1.2in"
+        android:layout_height="1in"
+        android:layout_below="@+id/CDesc"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/SelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CDesc"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/ClickPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectImage"
+        android:layout_marginStart="29dp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Click \nPhoto" />
+
+    <Button
+        android:id="@+id/CCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="48dp"
+        android:text="Save" />
+
+
+</RelativeLayout>

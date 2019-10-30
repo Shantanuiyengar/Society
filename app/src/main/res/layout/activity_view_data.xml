@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ViewData">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv5"
+        android:textColor="@android:color/black"
+        android:text="Title: "
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/tv5"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/row_border"
+        android:id="@+id/VTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv6"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/VTitle"
+        android:text="Description: "
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:textSize="30sp"
+        android:layout_below="@id/tv6"
+        android:background="@drawable/row_border"
+        android:layout_marginTop="15dp"
+        android:id="@+id/VDesc"/>
+
+    <ImageView
+        android:id="@+id/Viv"
+        android:layout_width="1.5in"
+        android:layout_height="1.3in"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/VDesc"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="2">
+        <Button
+            android:layout_columnWeight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:backgroundTint="#FF9800"
+            android:text="Previous"
+            android:id="@+id/Vprev"
+            />
+        <Button
+            android:layout_columnWeight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:backgroundTint="#FF9800"
+            android:text="Next"
+            android:id="@+id/VNext"
+            />
+    </GridLayout>
+
+</RelativeLayout>
